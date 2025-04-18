@@ -1,0 +1,436 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    color:#333;
+    line-height: 1.6;
+}
+
+/*Header*/
+header{
+    text-align: center;
+    background:url('media assets/photos/water.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 2rem 1rem;
+    position: relative;
+    text-shadow: 5px 0 4px black ;
+}
+
+header * {
+    position: relative;
+}
+
+.logo-img{
+    max-width: 200px;
+    margin-bottom: 1rem;
+}
+
+header h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+header h2{
+    font-size: 1.5 rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+header p{
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+}
+
+/*Nav Menu*/
+#menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+#menu ul li a:hover{
+    background-color: #00695c;
+}
+
+/*Main*/
+main section{
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main h2{
+    text-align: center;
+    color: #00796b;
+    margin-bottom: 2rem;
+}
+
+/*--Sections--*/
+
+/*Home*/
+#home-moments div{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+#home figure{
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    max-width: 400px;
+}
+
+#home-accommodations figure:hover{
+    transform: scale(1.03);
+}
+
+#home figure img{
+    width: 100%;
+    display: block;
+}
+
+#home figcaption{
+    padding: 1rem;
+    text-align: center;
+}
+
+#home figcaption h3{
+    color: #00695c;
+    margin-bottom: 0.5rem;
+}
+
+#home figcaption p{
+    font-size: 1rem;
+    color:#555;
+}
+
+#home-accommodations div{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 20px;
+
+}
+
+button{
+    background-color: #00897b;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius:25px;
+    margin-top: 0.5rem;
+}
+
+button:hover{
+    background-color: #00695c;
+}
+
+#home-testimonials{
+    text-align: center;
+}
+
+#home-testimonials p{
+    font-style: italic;
+    color:#444;
+    margin-bottom: 1.2rem;
+    margin-right:auto;
+    text-align: center;
+}
+
+/*Activity*/
+#activity-title{
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 10px lightgrey;
+}
+
+#activity h3{
+    font-size: 130%;
+    color: #004d40;
+}
+
+#activity h4{
+    margin: 2rem;
+    font-size: 110%;
+}
+
+#activity span{
+    font-weight: bold;
+}
+
+#activity-onsite div, #activity-excursions div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+#activity-onsite figure, #activity-excursions figure{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px lightgrey;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+#watersport, #kids, #deep, #perform{
+    grid-column: span 2;
+}
+
+#watersport li{
+    list-style: none;
+}
+#activity-onsite figure img, #activity-excursions figure img{
+    border-radius: 10px;
+    max-width: 80%;
+    margin: 1rem;
+}
+
+#activity-booking{
+    background-color: #e0f2f1;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#activity-booking ul li{
+    list-style: none;
+    margin: 1rem;
+}
+
+/*Dining*/
+#dining section{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 10px lightgrey;
+    text-align: center;
+}
+
+#dining section h3{
+    color: #004d40;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+} 
+
+#dining section ul{
+    list-style: none;
+    margin-top: 1rem;
+}
+
+#dining figure{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#dining figure img{
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px grey;
+}
+
+#dining ul li span{
+    font-weight: bold;
+}
+
+/*Rooms*/
+#rooms section{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 10px lightgrey;
+}
+
+#rooms-title{
+    text-align: center;
+}
+
+#rooms section h3{
+    color: #004d40;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+#rooms section{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#rooms-ocean p, #rooms-beach p, #rooms-garden p, #rooms-premium p, #rooms-accessible p{
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+#rooms section ul{
+    list-style: none;
+}
+
+#rooms figure{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#rooms figure img{
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px grey;
+}
+
+/*Spa*/
+#spa-title{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 10px lightgrey;
+}
+
+#spa h3{
+    margin-bottom: 1rem;
+}
+
+#spa-massages, #spa-facials, #spa-body, #spa-manipedi, #spa-enhance, #spa-wellness{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#spa-notes{
+    text-align: center;
+    background-color: #e0f2f1;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+#spa figure img{
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px grey;
+}
+
+#spa ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+#spa ul li{
+    background-color: #e0f2f1;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 1px grey;
+    
+}
+
+#spa ul li span{
+    font-weight: bold;
+    display: block;
+    color: #004d40;
+}
+
+/*Testimonials*/
+#testimonials-quotes{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+#testimonials-title{
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 10px lightgrey;
+}
+
+
+#testimonials-quotes p {
+    background-color: #e0f7fa;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px grey;
+    font-style: italic;
+    font-size: 110%;
+}
+
+#testimonials-quotes p:last-of-type{
+    grid-column: span 2;
+}
+
+#testimonials-note{
+    margin-top: 3rem;
+    text-align: center;
+    background-color: #e0f2f1;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/*Footer*/
+footer{
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 80%;
+}
+
+/*Responsive*/
+@media screen and (max-width: 768px){
+    #menu ul{
+        flex-direction:column;
+        gap: 1rem;
+    }
+
+    figure{
+        max-width: 90%;
+    }
+
+    #home-accommodations div{
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    #activity div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #testimonials-quotes{
+        display: flex;
+        flex-direction: column;
+    }
+}
+    
